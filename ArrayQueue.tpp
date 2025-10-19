@@ -74,10 +74,8 @@ void ArrayQueue<T>::enqueue(const T& elem) {
     if (this->length == maxSize) {
         throw string("Error: queue is full");
     }
-    if (this->length != 0) {
-        backIndex = (backIndex + 1) % maxSize;
-    }
     buffer[backIndex] = elem;
+    backIndex = (backIndex + 1) % maxSize;
     this->length++;
 }
 
