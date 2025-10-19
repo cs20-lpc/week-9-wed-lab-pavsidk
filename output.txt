@@ -1,0 +1,67 @@
+   TESTING ENQUEUE
+*--------------------*
+Length of empty myQueue: 0
+Checking using the 'isEmpty' method: The queue is empty. 
+Length of myQueue after enqueuing two strings: 2
+Front element: Wow
+Back element: Amazing
+
+
+   TESTING DEQUEUE
+*--------------------*
+Removing one element from myQueue. 
+Front element after one dequeue: Amazing
+Length of myQueue: 1
+   *----*
+Dequeuing remaining element. 
+Checking if myQueue is empty now: The queue is empty. 
+Trying to dequeue from an empty queue. 
+Error: No elements.
+
+
+   TESTING QUEUE
+*--------------------*
+Filling the queue completely. 
+Checking if myQueue is full: The queue is full. 
+Trying to enqueue another element (should throw error). 
+Error: queue is full
+   *----*
+Dequeuing two elements. 
+Enqueuing two more elements (wrap-around). 
+Front element: D
+Back element: Y
+Length of myQueue: 5
+
+
+   TESTING DEEP COPY
+*--------------------*
+Copying myQueue using the overloaded = assignment operator.
+Dequeuing one element from copyQueue to ensure deep copy. 
+Length of copyQueue: 4
+Length of myQueue: 5
+   *----*
+Copying myQueue using the copy constructor. 
+Dequeuing one element from copyQueueTwo to check deep copy. 
+Length of copyQueueTwo: 4
+Length of myQueue: 5
+
+
+   TESTING CLEAR
+*--------------------*
+Clearing contents of myQueue. 
+Length of myQueue after clear: 0
+Checking using the 'isEmpty' method: The queue is empty. 
+
+
+   OTHER DATATYPE
+*--------------------*
+Front of intQueue: 1000
+Back of intQueue: 2000
+   *----*
+Dequeuing an element from intQueue. 
+Front of intQueue: 2000
+   *----*
+Copying intQueue using the copy constructor. 
+Dequeuing an element from copyIntQueue to ensure deep copy. 
+Length of copyIntQueue: 0
+Length of intQueue: 1
