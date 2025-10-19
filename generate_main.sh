@@ -48,11 +48,16 @@ int main() {
         cout << e << " ";
     }
 
-    // populate queue A by enqueueing random values
-    srand(time(0));
-    for (int i = 0; i < queueA.getMaxSize(); i++) {
-        queueA.enqueue(rand() % 500);
-    }
+    queueA.enqueue(178);
+    queueA.enqueue(84);
+    queueA.enqueue(326);
+    queueA.enqueue(314);
+    queueA.enqueue(73);
+    queueA.enqueue(295);
+    queueA.enqueue(147);
+    queueA.enqueue(466);
+    queueA.enqueue(166);
+    queueA.enqueue(431);
 
     // ensure that queue A is now full
     if (queueA.isFull()) {
