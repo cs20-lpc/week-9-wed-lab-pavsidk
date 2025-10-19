@@ -62,20 +62,26 @@ void ArrayQueue<T>::copy(const ArrayQueue<T>& copyObj) {
 template <typename T>
 void ArrayQueue<T>::dequeue() {
     if (this->length == 0) {
-        throw string("Error: No elements.");
+        throw string("Dequeue: error, queue is empty");
     }
-    frontIndex = (frontIndex + 1) % maxSize;
+    frontIndex = (frontIndex + 1);
     this->length--;
+    if (this->length == 0) {
+        frontIndex = 0;
+        backIndex = 0;
+    }
 }
 
 template <typename T>
 void ArrayQueue<T>::enqueue(const T& elem) {
     // TODO
     if (this->length == maxSize) {
-        throw string("Error: queue is full");
+        throw string("Enqueue: error, queue is full");
+    }
+    if (this->length != 0) {
+        backIndex = (backIndex + 1);
     }
     buffer[backIndex] = elem;
-    backIndex = (backIndex + 1) % maxSize;
     this->length++;
 }
 
