@@ -48,7 +48,6 @@ int main() {
         cout << e << " ";
     }
 
-    queueA.enqueue(178);
     queueA.enqueue(84);
     queueA.enqueue(326);
     queueA.enqueue(314);
@@ -58,6 +57,7 @@ int main() {
     queueA.enqueue(466);
     queueA.enqueue(166);
     queueA.enqueue(431);
+    queueA.enqueue(178);
 
     // ensure that queue A is now full
     if (queueA.isFull()) {
