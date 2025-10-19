@@ -16,7 +16,7 @@ Length of myQueue: 1
 Dequeuing remaining element. 
 Checking if myQueue is empty now: The queue is empty. 
 Trying to dequeue from an empty queue. 
-Error: No elements.
+Dequeue: error, queue is empty
 
 
    TESTING QUEUE
@@ -24,11 +24,11 @@ Error: No elements.
 Filling the queue completely. 
 Checking if myQueue is full: The queue is full. 
 Trying to enqueue another element (should throw error). 
-Error: queue is full
+Enqueue: error, queue is full
    *----*
 Dequeuing two elements. 
 Enqueuing two more elements (wrap-around). 
-Front element: D
+Front element: C
 Back element: Y
 Length of myQueue: 5
 
